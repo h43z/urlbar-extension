@@ -1,0 +1,20 @@
+{
+  "name": "Bigger URL bar",
+  "description": "Bigger URL bar with multiple lines by @h43z. Press CTRL+Shift+L to open URL bar, hitting ESC or making it loose focus will hide it again. Extension code only injects itself when needed.",
+  "manifest_version": 2,
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": { 
+        "default": "Ctrl+Shift+L" 
+      },
+      "description": "Open URL bar"
+    }
+  }
+}
