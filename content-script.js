@@ -53,7 +53,6 @@ function focusURLBar(){
 
   const range = document.createRange()
   const sel = window.getSelection()
-  console.log(URLBar.childNodes)
 
   range.setStart(URLBar.childNodes[0], URLBar.innerText.length)
   range.collapse(true)
