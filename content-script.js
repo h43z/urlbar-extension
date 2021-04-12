@@ -23,6 +23,7 @@ function initURLBar(){
     background-color: white;
     outline: none;
     z-index: 1000;
+    height: auto;
   `
 
   URLBar.addEventListener('keypress', e => {
