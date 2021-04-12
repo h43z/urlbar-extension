@@ -28,6 +28,7 @@ function initURLBar(){
   URLBar.addEventListener('keypress', e => {
     if(e.key === 'Enter'){
       e.preventDefault()
+      e.currentTarget.style.display = 'none'
       document.location = e.target.innerText
     }
   })
