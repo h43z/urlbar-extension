@@ -1,7 +1,7 @@
 function initURLBar(){
   const URLBar = document.createElement('div')
 
-  URLBar.innerText = document.location.href
+  URLBar.innerText = decodeURI(document.location.href)
   URLBar.contentEditable = true
   URLBar.spellcheck = false
   URLBar.id = 'extensionurlbar'
@@ -44,7 +44,7 @@ function initURLBar(){
     e.currentTarget.style.display = 'none'
   })
 
-  document.documentElement.appendChild(URLBar)
+  document.body.appendChild(URLBar)
   focusURLBar()
 }
 
